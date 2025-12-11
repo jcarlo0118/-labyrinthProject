@@ -25,7 +25,22 @@ public class TextUI {
         System.out.println("-----------------------------------------");
 	}
     
+    public static void displayMainMenu() {
+    	System.out.println("=========================================");
+        System.out.println("             ** MAIN MENU ** ");
+        System.out.println("=========================================");
+        System.out.println("| 1. Start Adventure                    |");
+        System.out.println("| 2. Configure Settings                 |");
+        System.out.println("| 3. Exit (Terminate Game)              |");
+        System.out.println("=========================================");
+        System.out.print("Enter your choice (1-3): ");
+    }
+    
     public static void displayEnterName() {
     	System.out.println("Enter your character's name: ");
+    }
+    
+    public static void displayDefenderIsDead() {
+    	System.out.println("defender is dead");
     }
 }

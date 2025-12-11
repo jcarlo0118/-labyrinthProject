@@ -1,6 +1,9 @@
 package labyrinth.UserInteraction;
 import java.util.Scanner;
 
+
+import java.util.InputMismatchException;
+
 public class UserInput {
 	private Scanner in = new Scanner(System.in);
 	
@@ -9,7 +12,7 @@ public class UserInput {
 		while(true) {
 			try {
 				input = in.nextInt();
-			}catch( Exception e) {
+			}catch(InputMismatchException ime) {
 				System.out.println("ENTER A VALID INTEGER VALUE");
 				continue;
 			}
