@@ -32,14 +32,7 @@ public class GameController {
 		 * 
 		 * start adventure dovrebbe iniziare il labirinto ma per adesso inizia il combattimento
 		 */
-		System.out.println("=========================================");
-        System.out.println("             ** MAIN MENU ** ");
-        System.out.println("=========================================");
-        System.out.println("| 1. Start Adventure                    |");
-        System.out.println("| 2. Configure Settings                 |");
-        System.out.println("| 3. Exit (Terminate Game)              |");
-        System.out.println("=========================================");
-        System.out.print("Enter your choice (1-3): ");
+		TextUI.displayMainMenu();
         int choice = 0;
         while (true) {
         	choice = input.selectNumber();
