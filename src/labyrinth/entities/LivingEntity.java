@@ -1,25 +1,18 @@
 package labyrinth.entities;
-import labyrinth.*;
 
 public class LivingEntity {
-    private String name;    
+    private String name;     
     private double hp; //vita !(hp < 0)
     private double maxHp; //max vita  !( maxHp < 0)  
     private double strength; // != 0 || < 0 
     private double defense; // != 0 || < 0
-    private Position position;
     
-    public LivingEntity(String name, double hp, double maxHp, double strength, double defense, Position position) {
+    public LivingEntity(String name, double hp, double maxHp, double strength, double defense ) {
     	this.name = name;
     	this.hp = hp;
     	this.maxHp = maxHp;
     	this.strength = strength;
     	this.defense = defense;
-    	this.setPosition(position);
-    }
-    
-    public LivingEntity( String name, double hp, double maxHp, double strength, double defense) {
-    	this(name, hp, maxHp, strength, defense,null);
     }
     
     public void takeDamage(double damage) {
@@ -49,9 +42,5 @@ public class LivingEntity {
 	
 	public double getDefense() {return defense;}
 	public void setDefense(double defense) {this.defense = defense;}
-
-	public Position getPosition() {return position;}
-	public void setPosition(Position position) {this.position = position;}
-
     
 }

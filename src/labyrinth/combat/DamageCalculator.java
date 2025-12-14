@@ -1,8 +1,15 @@
 package labyrinth.combat;
 /*
+ * calcolo dei danni, ci possono essere per esempio: calcolo danno con la spada 
+ * oppure con l'armatura e quindi dobbiamo tenere conto della difesa quando viene svolto un attacco 
+ * 
  */
 public class DamageCalculator {
 	
+	/* 
+	 * calcolo danno generico ( combattere con le mani )
+	 * 
+	 */
 	public static double calculateGenericDamage(double strength, double difesa) {
 		/*calcola il danno attraverso la formula x = strength * ( 100 / (100 + defense) )
 		 * rendimento decrescente
